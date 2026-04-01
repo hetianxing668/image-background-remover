@@ -22,7 +22,9 @@ export default function ProcessPage() {
   const [resultData, setResultData] = useState<string | null>(null);
   const [originalName, setOriginalName] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
-  const [apiKey, setApiKey] = useState<string>("");
+  const [apiKey, setApiKey] = useState<string>(
+    process.env.NEXT_PUBLIC_REMOVE_BG_API_KEY || ""
+  );
   const [processingProgress, setProcessingProgress] = useState(0);
 
   // Load stored image on mount
