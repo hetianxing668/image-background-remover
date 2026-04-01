@@ -35,7 +35,7 @@ cd image-background-remover
 npm install
 
 # Copy environment variables
-cp .env.local.example .env.local
+cp env.example .env.local
 
 # Add your Remove.bg API key to .env.local
 # REMOVE_BG_API_KEY=your_api_key_here
